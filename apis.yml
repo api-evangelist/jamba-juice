@@ -1,8 +1,22 @@
 aid: jamba-juice
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jamba-juice.png
 name: Jamba Juice
-description: 'Jamba Juice is a company surfaced as a portfolio company of trinity-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Jamba (formerly Jamba Juice) is an American quick-service restaurant chain that blends
+  fruit-and-vegetable smoothies, fresh juices, bowls, and boosts. Founded in 1990 in San Luis Obispo,
+  California, it operates hundreds of locations and is owned by GoTo Foods (formerly Focus Brands). The
+  brand runs a consumer website, mobile ordering apps, and a rewards program; it publishes no public
+  developer API. Surfaced in the API Evangelist network as a trinity-ventures portfolio company.'
 url: https://raw.githubusercontent.com/api-evangelist/jamba-juice/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +26,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Food and Beverage
+- Restaurant
+- Quick Service
+- Smoothies
+- Juice
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +42,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/jamba-juice-vulnerability-disclosure.yml
+- type: Security
+  url: https://focusbrands.onspring.com/Survey/c8f3c589-0151-4e3c-bc73-4f1089ab2928
+- type: DomainSecurity
+  url: security/jamba-juice-domain-security.yml
+- type: PrivacyPolicy
+  url: https://www.jamba.com/privacy
 - type: Website
   url: https://www.jamba.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
